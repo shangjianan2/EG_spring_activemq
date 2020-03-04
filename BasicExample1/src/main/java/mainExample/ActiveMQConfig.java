@@ -14,14 +14,14 @@ import javax.jms.Topic;
 
 @Configuration
 public class ActiveMQConfig {
-    @Bean
-    public Queue queue(){
-        return new ActiveMQQueue("springboot_queue");
-    }
-    @Bean
-    public Topic topic(){
-        return new ActiveMQTopic("springboot_topic");
-    }
+//    @Bean
+//    public Queue queue(){
+//        return new ActiveMQQueue("springboot_queue");
+//    }
+//    @Bean
+//    public Topic topic(){
+//        return new ActiveMQTopic("springboot_topic");
+//    }
     @Bean
     public ActiveMQConnectionFactory connectionFactory() {
         return new ActiveMQConnectionFactory("admin", "admin", "tcp://39.106.169.107:61616");
